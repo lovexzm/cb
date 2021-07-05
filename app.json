@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/beRecord/beRecord",
+    "pages/index/index",
+    
+    "pages/menu/menu",
+    "pages/logs/logs"
+  
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#006A2C",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

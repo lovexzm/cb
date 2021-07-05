@@ -1,0 +1,118 @@
+<!--pages/index/index.wxml-->
+
+
+  <view class="duration-touch-view" 
+bindtouchstart="touchStart" 
+bindtouchmove="touchMove" 
+bindtouchend="touchEnd" >
+
+<view class="logo_img"
+    style="width: 750rpx; height: 200rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+		<view style="width: 752rpx; height: 130rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx"></view>
+	
+	  <image class="img" src="logo_cb.png" mode="aspectFit"
+      style="width: 752rpx; height: 104rpx; display: inline-block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+    </image>
+  </view>
+
+
+
+  <view style="margin-top: 100rpx; width: 750rpx; height: 854rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+    <view class="weui-cells__title"
+      style="padding-top:20rpx;width: 750rpx; height: 57rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">注册信息
+    </view>
+    <view class="weui-cells weui-cells_form">
+
+
+
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label"><span style="color:red ">*</span>访客姓名</label></view>
+        <view class="weui-cell__bd">
+          <input value="{{userName}}" bindinput="inputUserName" class="weui-input " placeholder="请输入访客姓名"
+            placeholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+
+
+
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label"><span style="color:red">*</span>性别</label></view>
+        <view class="weui-cell__bd" style="text-align:center">
+          <radio-group style="width: 390rpx; height: 52rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx" bindchange="inputFnSex" value="{{sex}}">
+            <view>
+            </view>
+            <radio color="#09BB07" value="male"
+              style="width: 192rpx; height: 52rpx; display: inline-block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+              男</radio>
+            <radio color="#09BB07" value="female"
+              style="width: 40rpx; height: 52rpx; display: inline-block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+              女</radio>
+          </radio-group>
+        </view>
+      </view>
+
+
+
+
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd">
+          <label class="weui-label"><span style="color:red">*</span>联系电话</label>
+        </view>
+        <view class="weui-cell__bd">
+          <input style="width: 477rpx; height: 34rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx"  class="weui-input " placeholder="填写电话号码" type="number" placeholder-class="weui-input__placeholder"
+            value="{{phone}}" bindinput="inputFnPhone" />
+        </view>
+      </view>
+
+
+      <view class="weui-cell weui-cell_active"  >
+        <view class="weui-cell__hd">
+          <label class="weui-label"><span style="color:red">*</span>身份证号码</label>
+        </view>
+        <view class="weui-cell__bd">
+          <input style="width: 477rpx; height: 46rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx"  class="weui-input" placeholder="填写身份证号码" bindinput="inputFnIdCard" type="idcard"
+            placeholder-class="weui-input__placeholder" value="{{idCard}}" />
+        </view>
+      </view>
+
+
+      <v-panel is-show="{{isShow}}" bindok="inputOk" binddelete="inputdelete" bindinputchange="inputChange"
+        key-board-type="{{keyBoardType}}" backgroundColor="white" />
+
+
+
+
+
+
+
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd">
+          <label class="weui-label"><span style="color:red"></span><text space="ensp"> 车牌号码</text></label>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="填写车牌号码" type="text" placeholder-class="weui-input__placeholder"
+            bindinput="inputFnCarNum" value="{{carNum}}" />
+        </view>
+      </view>
+
+
+
+
+    </view>
+    <view class="weui-cell" style="position: relative; left: 0rpx; top: 70rpx;">
+      <a class="weui-btn weui-btn_primary" bindtap="_Sumbit" style="background-color:#006A2C">提交</a>
+    </view>
+
+    <view class="weui-footer weui-footer_fixed-bottom">
+
+      <view class="footer_img" style="height:10vw">
+        
+      </view>
+    </view>
+  </view>
+</view>

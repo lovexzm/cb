@@ -1,0 +1,37 @@
+<!--pages/beRecord/beRecord.wxml-->
+<!--by lwj 6/5 -- page：被访申请确认-->
+<view>
+
+  <!--页面头部-->
+  <view class="logo_img"
+    style="width: 750rpx; height: 200rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+    <view style="width: 752rpx; height: 130rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+    </view>
+
+    <image class="img" src="logo_cb.png" mode="aspectFit"
+      style="width: 752rpx; height: 104rpx; display: inline-block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+    </image>
+  </view>
+
+
+  <view>
+    <!-- 订单列表-->
+    <!--请求返回数据为空，则显示未“无拜访申请记录”，有返回数据则显示记录列表-->
+    <view v-if="" style="text-align:center;">
+      <text>无拜访申请记录</text>
+    </view>
+    
+    <!--记录列表-->
+    <view>
+      <ul>
+          <li></li>
+      </ul>
+    </view>
+
+
+
+  </view>
+
+
+
+</view>

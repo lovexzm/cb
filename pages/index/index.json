@@ -1,0 +1,13 @@
+{
+  
+  "usingComponents": {
+  
+    "v-panel" : "/components/KeyWord_CarNum/index"
+    
+  },
+
+  "window" :{
+  
+  }
+
+}

@@ -1,0 +1,11 @@
+/* pages/menu/menu.wxss */
+.img{
+  height: 80px;
+ }
+ .logo_img{
+   margin: 0 auto;
+   background-color:#006A2C;
+   border-bottom-left-radius: 1rem;
+   border-bottom-right-radius: 1rem;
+   box-shadow:0px 0px  10px 5px #aaa;
+ }
